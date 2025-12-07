@@ -5,7 +5,7 @@ int main()
 {
 
     printf("qwewq");
-    printf("deneme");
+    printf ("deneme2");
 
     return 0;
 }
