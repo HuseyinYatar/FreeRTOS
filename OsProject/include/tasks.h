@@ -2,8 +2,8 @@
 #define TASKS_H
 
 #include "FreeRTOS.h" 
-
 #include "task.h"
+
 typedef struct {
     int task_id;               // Görev Kimliði (Giriþ dosyasýndan)
     int initial_priority;      // Baþlangýç önceliði (0, 1, 2, 3)
@@ -14,4 +14,5 @@ typedef struct {
     TaskHandle_t handle;       // FreeRTOS görev tanýtýcýsý
 } TaskData_t;
 
+void vTaskFunction( void *pvParameters );
 #endif // TASKS_H
